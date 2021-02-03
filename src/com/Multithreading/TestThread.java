@@ -3,7 +3,7 @@ package com.Multithreading;
 import com.base.day03.ExecptionClass.Test;
 
 //抢火车票
-public class TestThread  implements Runnable{
+public class TestThread implements Runnable {
 
     //票数
     private int ticketNums = 20;
@@ -11,11 +11,11 @@ public class TestThread  implements Runnable{
 
     @Override
     public void run() {
-        while (true){
-            if(ticketNums<=0){
+        while (true) {
+            if (ticketNums <= 0) {
                 break;
             }
-            System.out.println(Thread.currentThread().getName()+"抢到了第"+ticketNums--+"张票");
+            System.out.println(Thread.currentThread().getName() + "抢到了第" + ticketNums-- + "张票");
         }
 
 
@@ -23,9 +23,9 @@ public class TestThread  implements Runnable{
 
     public static void main(String[] args) {
         TestThread testThread = new TestThread();
-        new Thread(testThread,"小明").start();
-        new Thread(testThread,"大爷").start();
-        new Thread(testThread,"黄牛党").start();
+        new Thread(testThread, "小明").start();
+        new Thread(testThread, "大爷").start();
+        new Thread(testThread, "黄牛党").start();
 
     }
 }

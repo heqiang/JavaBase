@@ -7,14 +7,13 @@ public class ThreadYield {
 }
 
 
-
-class  MyYield implements Runnable{
+class MyYield implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName()+"线程开始");
+        System.out.println(Thread.currentThread().getName() + "线程开始");
         //线程礼让
         Thread.yield();
-        System.out.println(Thread.currentThread().getName()+"线程开始");
+        System.out.println(Thread.currentThread().getName() + "线程开始");
     }
 }

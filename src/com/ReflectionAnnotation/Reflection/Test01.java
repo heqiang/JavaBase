@@ -2,18 +2,18 @@ package com.ReflectionAnnotation.Reflection;
 
 public class Test01 {
     public static void main(String[] args) throws ClassNotFoundException {
-        Class<?> c1 =  Class.forName("com.ReflectionAnnotation.Reflection.User");
+        Class<?> c1 = Class.forName("com.ReflectionAnnotation.Reflection.User");
         System.out.println(c1);
         //一个类在内存中只有一个class对象
         //一个类被加载后，类的结构都会被封装到class对象中
-       Class c = c1.getClass();
+        Class c = c1.getClass();
         System.out.println(c);
     }
 }
 
 
-class  User{
-    private  String name;
+class User {
+    private String name;
     private int age;
     private int id;
 
@@ -22,7 +22,10 @@ class  User{
         this.age = age;
         this.id = id;
     }
-    public  User(){ }
+
+    public User() {
+    }
+
     public String getName() {
         return name;
     }
@@ -58,13 +61,14 @@ class  User{
 }
 
 
-class  Student extends User{
-    public Student(){
+class Student extends User {
+    public Student() {
         System.out.println("我是学生");
     }
 }
-class  Teacher extends User{
-    public Teacher(){
+
+class Teacher extends User {
+    public Teacher() {
         System.out.println("我是老师");
     }
 }

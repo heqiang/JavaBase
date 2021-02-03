@@ -14,15 +14,15 @@ public class TestThreadState {
             System.out.println("***********");
         });
         // 观察状态
-        Thread.State  state = thread.getState();
-        System.out.println("线程的状态："+state);
+        Thread.State state = thread.getState();
+        System.out.println("线程的状态：" + state);
 
         //观察启动后
         thread.start();
         state = thread.getState();
         System.out.println(state);
 
-        while (state!=Thread.State.TERMINATED){
+        while (state != Thread.State.TERMINATED) {
             Thread.sleep(1000);
             //更新线程的状态
             state = thread.getState();

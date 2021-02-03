@@ -8,13 +8,13 @@ public class ThreadPriority {
 
     public static void main(String[] args) {
         //主线程默认的优先级为10
-        System.out.println(Thread.currentThread().getName()+"->"+Thread.currentThread().getPriority());
+        System.out.println(Thread.currentThread().getName() + "->" + Thread.currentThread().getPriority());
         MyPriority myPriority = new MyPriority();
-        Thread  t1 = new Thread(myPriority,"1");
-        Thread  t2 = new Thread(myPriority,"2");
-        Thread  t3 = new Thread(myPriority,"3");
-        Thread  t4 = new Thread(myPriority,"4");
-        Thread  t5= new Thread(myPriority,"5");
+        Thread t1 = new Thread(myPriority, "1");
+        Thread t2 = new Thread(myPriority, "2");
+        Thread t3 = new Thread(myPriority, "3");
+        Thread t4 = new Thread(myPriority, "4");
+        Thread t5 = new Thread(myPriority, "5");
         //先设置优先级 在启动
         t1.start();
 
@@ -34,12 +34,12 @@ public class ThreadPriority {
 }
 
 
-class  MyPriority implements Runnable{
+class MyPriority implements Runnable {
 
     @Override
     public void run() {
         System.out.println(
-                Thread.currentThread().getName()+"->"+Thread.currentThread().getPriority()
+                Thread.currentThread().getName() + "->" + Thread.currentThread().getPriority()
         );
     }
 }

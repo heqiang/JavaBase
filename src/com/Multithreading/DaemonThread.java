@@ -18,7 +18,7 @@ public class DaemonThread {
 }
 
 
-class  MyDaemonThread implements Runnable{
+class MyDaemonThread implements Runnable {
 
     @Override
     public void run() {
@@ -28,12 +28,13 @@ class  MyDaemonThread implements Runnable{
         System.out.println("GoodBye");
     }
 }
-class  GodDaemonThread implements Runnable{
+
+class GodDaemonThread implements Runnable {
 
     @Override
     public void run() {
-       while (true){
-           System.out.println("God bless you");
-       }
+        while (true) {
+            System.out.println("God bless you");
+        }
     }
 }

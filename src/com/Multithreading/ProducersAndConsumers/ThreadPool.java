@@ -19,7 +19,7 @@ public class ThreadPool {
 }
 
 
-class  MyThread implements  Runnable{
+class MyThread implements Runnable {
 
     @Override
     public void run() {

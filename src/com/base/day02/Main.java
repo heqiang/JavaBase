@@ -17,8 +17,8 @@ public class Main {
 
     public static long fun(long num) {
         int result = 1;
-        for(long i=1;i<num;i++){
-            result*=i;
+        for (long i = 1; i < num; i++) {
+            result *= i;
         }
         return result;
     }

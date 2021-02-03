@@ -1,10 +1,11 @@
 package com.Multithreading;
 
 /*
-* 推到lambda表达式
-* */
+ * 推到lambda表达式
+ * */
 public class TestLambda {
-    static  ILike  like1;
+    static ILike like1;
+
     //静态内部类
     // 实现类
     static class Like2 implements ILike {

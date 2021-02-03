@@ -6,17 +6,18 @@ package com.Multithreading;
 
 public class ThreadStaticProxy {
     public static void main(String[] args) {
-         WeddingCompany weddingCompany = new WeddingCompany(new Me());
-         weddingCompany.HappyMarry();
+        WeddingCompany weddingCompany = new WeddingCompany(new Me());
+        weddingCompany.HappyMarry();
     }
 }
 
-interface  Marry{
+interface Marry {
     //人生四大喜事 : 他乡遇故知 久旱逢甘霖 洞房花烛夜 金榜题名时
 
-    void  HappyMarry();
+    void HappyMarry();
 }
-class  Me implements Marry{
+
+class Me implements Marry {
 
     @Override
     public void HappyMarry() {
@@ -24,10 +25,10 @@ class  Me implements Marry{
     }
 }
 
-class  WeddingCompany implements Marry{
-    private  Marry target;
+class WeddingCompany implements Marry {
+    private Marry target;
 
-    public WeddingCompany(Marry target){
+    public WeddingCompany(Marry target) {
         this.target = target;
     }
 

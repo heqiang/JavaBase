@@ -1,15 +1,16 @@
 package com.base.day02.abstract_implements;
 
-public abstract  class AbstractClass {
-        public String name;
-        public int age;
+public abstract class AbstractClass {
+    public String name;
+    public int age;
 
-        public  AbstractClass(String name,int age){
-                this.name = name;
-                this.age = age;
-        }
+    public AbstractClass(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-        public AbstractClass(){}
+    public AbstractClass() {
+    }
 
     public String getName() {
         return name;

@@ -4,7 +4,7 @@ package com.Multithreading;
 // 推荐使用Runnable 接口多继承
 public class RunnableThread implements Runnable {
 
-    public  String name;
+    public String name;
 
     @Override
     public void run() {
@@ -13,7 +13,8 @@ public class RunnableThread implements Runnable {
 
         }
     }
-    public  RunnableThread(String threadName){
+
+    public RunnableThread(String threadName) {
         this.name = threadName;
     }
 
